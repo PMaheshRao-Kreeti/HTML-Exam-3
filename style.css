@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu__item {
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-bottom: 5px solid transparent;
+}
+
+.nav-menu__item:hover {
+  border-bottom: 5px solid #43c370;
+}
+
+.nav-menu__item:last-child:hover {
+  border-bottom: none;
+}
+
+.nav-menu__item i {
+  padding: 0 1rem;
+}
+
+.nav-menu__link {
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav-menu__link:hover {
+  color: white;
+}
+
+.nav-menu__button {
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: transparent;
+  
+  color: black;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+}
+
+.nav-menu__button:hover {
+  border: 1px solid blue;
+  background-color: blue;
+  
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.banner-section {
+  background-image: url("./assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  margin-top: -6rem;
+}
+
+.banner__text {
+  color: white;
+  padding-top: 10rem;
+  text-align: left;
+  font-size: 5rem;
+}
+
+.banner-form__section{
+  width: 80%;
+  height: 15rem;
+  margin: 0 auto;
+  padding: 1rem ;
+  background-color: #363847;
+}
+
+.banner-links {
+  display: flex;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.banner-links li {
+  color: white;
+  font-size: 1.5rem;
+  list-style-type: none;
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+.banner-links li:hover {
+  color: blue;
+}
+
+.banner-links-active {
+  color: blue !important;
+}
+
+.banner-links__item {
+  background-color: white;
+  display: flex;
+  max-width: 30%;
+  margin: auto;
+}
+
+
+.banner-modal  {
+  background-color: white;
+  display: flex;
+  margin: auto;
+  margin-bottom: 6rem;
+  padding: 10px 20px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+}
+
+.banner-modal__item {
+  padding: 1rem;
+}
+
+.banner-modal__icon {
+  background-color: blue;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.banner-modal__icon i {
+  color: white;
+  font-size: 20px;
+}
+
+.banner-modal__icon-text-{
+  padding-left: 2px;
+}
+
+.selling__section-heading, .feature__heading{
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 3rem;
+}
+
+.selling__section-description{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.selling__section__sub-description{
+  line-height: 2;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.selling__section__tree-img img{
+  width: 100%;
+}
+
+.feature__img-title{
+  font-size: 30px;
+}
+.register{
+  color: white;
+  padding: 5rem;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.register h3{
+  font-size: 3rem;
+}
+.register-submit-btn{
+  color: blue;
+  background-color: white;
+  border: 1px solid white!important;
+}
+
+.register-submit-btn:hover{
+  color: white;
+  background-color: blue;
+}
+
+footer {
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1198px) {
+  html {
+    font-size: 12px;
+  }
+
+  .banner-section {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-modal {
+    width: 90%;
+    margin: auto;
+    padding: 5px 10px;
+    gap: 5px;
+  }
+
+  .banner__text {
+    font-size: 3rem;
+  }
+
+  .hamburger {
+    display: block;
+    color: blue;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(201, 201, 201);
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+}
+@media (min-width: 3000px) {
+  .banner-section {
+    height: 40vh;
+  }
+}

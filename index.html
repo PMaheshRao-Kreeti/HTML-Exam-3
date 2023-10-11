@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bb970ecffe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <title>HOMEPRESS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./assets/logo.png" />
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a href="#home" class="nav-menu__link pt-5">
+              HOME
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#listing" class="nav-menu__link">
+              LISTING
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#property" class="nav-menu__link">
+              PROPERTY
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#" class="nav-menu__link">
+              PAGES
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#" class="nav-menu__link">
+              IDX PAGES
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <button class="nav-menu__button">
+              <i class="fa-solid fa-plus"></i>
+              Add listing
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span>
+            <i id="ham-icon" class="fa fa-bars"></i>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner-section" id="home">
+        <div class="banner container">
+          <h1 class="banner__text">
+            Real Estate <br />
+            And Brokerage Agency
+          </h1>
+        </div>
+        <div>
+          <div class="banner-form__section">
+            <ul class="banner-links">
+              <li class="banner-links-active">Buy</li>
+              <li>Rent</li>
+              <li>Sold</li>
+            </ul>
+            <form class="banner-modal bg-dark text-white">
+              <select class="form-select banner-modal__item">
+                <option selected>Apprtment</option>
+              </select>
+              <input
+                type="text"
+                class="form-text banner-modal__item"
+                placeholder="Search"
+              />
+
+              <button class="banner-modal__icon" type="submit" value="Submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="banner-modal__icon-text">Search</span>
+              </button>
+              <select class="form-select banner-modal__item">
+                <option selected>Advanced option</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="row pt-5 mt-5 selling__section">
+          <div class="col-md-6 text-center">
+            <h2 class="selling__section-heading">
+              We all know how to sell great homes
+            </h2>
+            <p class="selling__section-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque
+              sunt atque mollitia dolor, laudantium eligendi ex corporis
+              
+            </p>
+            <section class="d-flex justify-content-evenly ">
+              <figure>
+                <img src="./assets/blog.png" alt="Our blog">
+                <figcaption>Our Blog</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/services.png" alt="Our service">
+                <figcaption>Our service</figcaption>
+              </figure>
+              <figure>
+                <img src="./assets/contact.png" alt="Contact Us">
+                <figcaption>Contact Us </figcaption>
+              </figure>
+            </section>
+            <p class="py-3 selling__section__sub-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque
+              sunt atque mollitia dolor, laudantium eligendi ex corporis
+              
+            </p>
+            <p class="py-3 selling__section__sub-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque
+              sunt atque mollitia dolor, laudantium eligendi ex corporis
+              suscipit nam culpa enim doloribus, voluptas nemo! Quos iure
+              accusantium alias vero?
+            </p>
+          </div>
+          <div class="col-md-6 selling__section__tree-img">
+            <img src="./assets/home-treeth.jpg" alt="home tree image">
+          </div>  
+        </div>
+      </section>
+
+      <section class="feature container pt-5 mt-5">
+        <section class="row">
+          <h2 class="feature__heading text-center py-5 my-5">As Featured in</h2>
+           <figure class="col-lg-3 col-md-6 d-inline-flex p-3">
+            <img src="./assets/high-rise.png" alt="high rise">
+            <figcaption class="feature__img-content">
+              <h3 class="feature__img-title">High Rise</h3>
+              <span class="feature__img-sub-title">Real Estate Company</span>
+            </figcaption>
+           </figure>
+            <figure class="col-lg-3 col-md-6 d-inline-flex p-3">
+            <img src="./assets/mark-co.png" alt="high rise">
+            <figcaption class="feature__img-content">
+              <h3 class="feature__img-title">High Rise</h3>
+              <span class="feature__img-sub-title">Real Estate Company</span>
+            </figcaption>
+           </figure>
+            <figure class="col-lg-3 col-md-6 d-inline-flex p-3">
+            <img src="./assets/real-estste.png" alt="high rise">
+            <figcaption class="feature__img-content">
+              <h3 class="feature__img-title">High Rise</h3>
+              <span class="feature__img-sub-title">Real Estate Company</span>
+            </figcaption>
+           </figure>
+            <figure class="col-lg-3 col-md-6 d-inline-flex p-3">
+            <img src="./assets/high-rise.png" alt="high rise">
+            <figcaption class="feature__img-content">
+              <h3 class="feature__img-title">High Rise</h3>
+              <span class="feature__img-sub-title">Real Estate Company</span>
+            </figcaption>
+           </figure>
+
+        </section>
+      </section>
+      <section class="container-fluid register">
+        <img src="/assets/member.png" alt="">
+        <h3>Become a Real State Agent</h3>
+        <button type="submit" class="btn btn-lg register-submit-btn"> Register</button>
+      </section>
+    </main>
+    <footer>
+      <span>Copyright &copy; 2022 HomePress</span>
+    </footer>
+  </body>
+</html>
